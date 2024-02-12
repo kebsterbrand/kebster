@@ -47,6 +47,13 @@ ol, ul, li, dl, dd, dt {
 	text-align: left;
 }
 
+@media (max-width: 575.98px) {
+	.pagerow {
+		width: calc(100% - 2em);
+		margin: 0 auto;
+		text-align: left;
+	}	
+}
 
 /* Navigation */
 
