@@ -14,7 +14,7 @@ body {
 	text-align: center;
 }
 
-h1, h2, h3, h4, h5, p, div {
+h1, h2, h3, h4, h5, p, div, figure, img, figcaption {
 	margin: 0;
 	padding: 0;
 }
@@ -28,7 +28,16 @@ h1 {
 	padding: 2em 0 0.5em;
 }
 
-p {
+h3 {
+	font-family: tt-commons-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2em;
+	text-transform: lowercase;
+	padding: 1em 0 0.5em;
+}
+
+p, figcaption {
 	padding: 0 0 0.5em 0;
 	font-size: 1.5em;
 	line-height: 120%;
@@ -41,19 +50,38 @@ ol, ul, li, dl, dd, dt {
 	list-style: none;
 }
 
-.pagerow {
+.pagerow, #footer {
 	width: calc(100% - 40%);
 	margin: 0 auto;
 	text-align: left;
 }
 
+#footer {
+	font-size: 80%;
+	padding: 2em 0 5em;
+}
+
 @media (max-width: 575.98px) {
-	.pagerow {
+	.pagerow, #footer {
 		width: calc(100% - 2em);
 		margin: 0 auto;
 		text-align: left;
 	}	
 }
+
+
+.kebster {
+	font-family: tt-commons-pro, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.image-fullwidth {
+	widows: 100%;
+	height: auto;
+	max-width: 100%;
+}
+
 
 /* Navigation */
 
